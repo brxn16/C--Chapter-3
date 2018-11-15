@@ -27,7 +27,7 @@ namespace PayrollGUI
             double net;
             double taxes;
             hourly = Convert.ToDouble(txtHourly.Text);
-            hours = Convert.ToInt32(txtHoursWorked.Text);
+            hours = Convert.ToDouble(txtHoursWorked.Text);
 
             gross = hourly * hours;
             fedTax = gross * .15;
