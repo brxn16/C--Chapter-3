@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace FixedDebugThree3
 {
-    public partial class Form1 : Form
+    public partial class Form1 : System.Windows.Forms.Form
     {
         public Form1()
         {
@@ -20,9 +20,9 @@ namespace FixedDebugThree3
         double total = 0;
         private void totalButton_Click(object sender, EventArgs e)
         {
-            double num = Convert.ToDouble(textBox1);
+            double num = Convert.ToDouble(txtNumber);
             total = num;
-            outputLabel.Text = "Running total: ", total;
+            outputLabel.Text = "Running total: " + total;
         }
     }
 }

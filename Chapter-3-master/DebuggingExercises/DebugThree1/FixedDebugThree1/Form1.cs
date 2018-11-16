@@ -23,7 +23,7 @@ namespace FixedDebugThree1
             double product;
             num1 = Convert.ToDouble(txtNum1.Text);
             num2 = Convert.ToDouble(txtNum2.Text);
-            product = num1 + num2;
+            product = num1 * num2;
             outputLabel.Text = String.Format("{0} times {1} is {2}", num1, num2, product);
         }
     }

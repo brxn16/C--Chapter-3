@@ -16,14 +16,16 @@ namespace FixedDebugThree2
             InitializeComponent();
         }
 
-        private void helloButton_Click(object sender, EventArgs e)
+        private void btnGoodbye_Click(object sender, EventArgs e)
         {
-            outputLabel = "Goodbye, " + textBox1.Text + "!";
+            lblGreeting.Text = "Goodbye, " + txtName.Text + "!";
         }
 
-        private void goodbyeButton_Click(object sender, EventArgs e)
+        private void helloButton_Click(object sender, EventArgs e)
         {
-            outputLabel = "Goodbye, " + textBox1.Text + "!";
+            lblGreeting.Text = "Hello, " + txtName.Text + "!";
         }
+
+
     }
 }
