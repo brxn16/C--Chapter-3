@@ -33,8 +33,15 @@ namespace GreenvilleRevenueGUI
 
             lblRev1.Text = "" + rev1.ToString("C");
             lblRev2.Text = "" + rev2.ToString("C");
-
-            lblMoreCont.Text = "" + 
+            
+            if(year1Cont > year2Cont)
+            {
+                lblMoreCont.Text = "Last year had more contestants";
+            }
+            if(year2Cont > year1Cont)
+            {
+                lblMoreCont.Text = "This year had more contestants";
+            }
         }
     }
 }
